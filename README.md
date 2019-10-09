@@ -19,6 +19,8 @@ The following steps should be taken when using this Shell:
 ![OpenFire Shell Service REST API Plug In](https://user-images.githubusercontent.com/18084644/66498529-23f95100-eab6-11e9-847d-d2006709a0b1.PNG)
 
 4. Log in to the Web GUI for the OpenFire server (for example, http://localhost:9090). Move to the "Server" toolbar and then "Server Settings" under this. You should see "REST API" on the bottom left. Select this and then Enable the plug-in with basic authentication.
+
+
 5. Download and install the Spark client from https://www.igniterealtime.org/downloads/index.jsp#openfire. Log in and test the connectivity to the OpenFire server.
 
 ## Operational Usage
