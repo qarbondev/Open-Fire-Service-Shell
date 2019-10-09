@@ -37,7 +37,7 @@ We suggest you name the instances something like "Chat Room Monitor" and "Chat R
 ![Props](https://user-images.githubusercontent.com/18084644/66503499-4e034100-eabf-11e9-8451-cf7e2e7fa97b.PNG)
 
 ### Reserving a blueprint and creating the chat room for the sandbox
-Reserve your blueprint. Once Active, you should create a chatroom for the sandbox using the "Create Sandbox Chat Room" command. Notice in the Spark client and/or the OpenFire Server web GUI, there is now a new Group Chat room. The owner will be set as the admin user defined in the service properties for OpenFire. The members will reflect the permitted users of the sandbox. It is important that all users that need access to this chat room should be made Permitted Users.
+Reserve your blueprint. Once Active, you should create a chatroom for the sandbox using the "Create Sandbox Chat Room" command. Notice in the Spark client and/or the OpenFire Server web GUI, there is now a new Group Chat room. The owner will be set as the admin user defined in the service properties for OpenFire. The members will reflect the permitted users of the sandbox. It is important that all users that need access to this chat room should be made Permitted Users including the current user.
 
 ![Sandbox Name](https://user-images.githubusercontent.com/18084644/66499702-3b393e00-eab8-11e9-91c5-756ebc351ed9.PNG)
 
