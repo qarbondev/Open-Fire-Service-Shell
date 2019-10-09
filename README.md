@@ -57,6 +57,17 @@ Sending a message to the sandbox users is simple. Click on the "Chat Room Servic
 
 ![Msg in Spark](https://user-images.githubusercontent.com/18084644/66500977-72a8ea00-eaba-11e9-9ba3-96299a62b1e7.PNG)
 
+The message is echo'ed in CloudShell in the Output window, the monitor shows it again and you can see it directly in the Spark client for OpenFire.
+
+### Seeing messages entered directly into OpenFire via a Client such as Spark
+
+Let us imagine that someone finds it more convenient to send a message via a client app such as Spark. In this case, you will see the message automatically picked up and reflected in CloudShell.
+
+![Msg Outside CS](https://user-images.githubusercontent.com/18084644/66501326-1c887680-eabb-11e9-9d36-83416d002ecd.PNG)
+
+![Auto Monitor Message](https://user-images.githubusercontent.com/18084644/66501399-40e45300-eabb-11e9-8d3b-f757373e1ce3.PNG)
+
+### Listing all chat room messages to-date
 
 
 
