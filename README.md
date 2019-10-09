@@ -27,9 +27,13 @@ The following steps should be taken when using this Shell:
 ## Operational Usage
 First, you need to add two instances of the service to a blueprint. Since service shells do not allow concurrent commands, this is necessary since one command needs to be running all the time - the one that monitors a chat room for messages entered outside of CloudShell in order to echo them in the sandbox.
 
-We suggest you name the instances something like "Chat Room Message Monitor" and "Chat Room Functions". Ensure that the properties are entered correctly. Essentially, you need to identify the admin account and location of the OpenFire Server and also the same for CloudShell.
+We suggest you name the instances something like "Chat Room Monitor" and "Chat Room Service". Ensure that the properties are entered correctly into both services. Essentially, you need to identify the admin account and location of the OpenFire Server and also the same for CloudShell.
+
+![Chatroom Blueprint](https://user-images.githubusercontent.com/18084644/66499146-25774900-eab7-11e9-9e42-bf93d9c319b7.PNG)
 
 Reserve your blueprint. Once Active, you should create a chatroom for the sandbox using the "Create Sandbox Chat Room" command. Notice in the Spark client and/or the OpenFire Server web GUI, there is now a new Group Chat room. The owner will be set as the admin user defined in the service properties for OpenFire. The members will reflect the permitted users of the sandbox. It is important that all users that need access to this chat room should be made Permitted Users.
+
+
 
 In the other service instance (let us call it "Chat Room Message Monitor", click on the "
 
