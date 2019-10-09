@@ -25,17 +25,41 @@ The following steps should be taken when using this Shell:
 5. Download and install the Spark client from https://www.igniterealtime.org/downloads/index.jsp#openfire. Log in and test the connectivity to the OpenFire server.
 
 ## Operational Usage
+### Adding Services to a blueprint
 First, you need to add two instances of the service to a blueprint. Since service shells do not allow concurrent commands, this is necessary since one command needs to be running all the time - the one that monitors a chat room for messages entered outside of CloudShell in order to echo them in the sandbox.
 
 We suggest you name the instances something like "Chat Room Monitor" and "Chat Room Service". Ensure that the properties are entered correctly into both services. Essentially, you need to identify the admin account and location of the OpenFire Server and also the same for CloudShell.
 
 ![Chatroom Blueprint](https://user-images.githubusercontent.com/18084644/66499146-25774900-eab7-11e9-9e42-bf93d9c319b7.PNG)
 
+### Reserving a blueprint and creating the chat room for the sandbox
 Reserve your blueprint. Once Active, you should create a chatroom for the sandbox using the "Create Sandbox Chat Room" command. Notice in the Spark client and/or the OpenFire Server web GUI, there is now a new Group Chat room. The owner will be set as the admin user defined in the service properties for OpenFire. The members will reflect the permitted users of the sandbox. It is important that all users that need access to this chat room should be made Permitted Users.
 
+![Sandbox Name](https://user-images.githubusercontent.com/18084644/66499702-3b393e00-eab8-11e9-91c5-756ebc351ed9.PNG)
+
+![Create Chat Room](https://user-images.githubusercontent.com/18084644/66499494-db429780-eab7-11e9-84c3-03a69511cd8a.PNG)
+
+![Chat Room Create Output](https://user-images.githubusercontent.com/18084644/66499590-04632800-eab8-11e9-9281-dd8e5550b2b7.PNG)
+
+![ChatRoom in OpenFire](https://user-images.githubusercontent.com/18084644/66499738-4b511d80-eab8-11e9-8e51-0af94f8ba874.PNG)
+
+### Start monitoring messages in the sandbox
+In the other service instance (let us call it "Chat Room Monitor", click on the "Monitor Chat Room" command. This command will never terminate so simply leave it running. The purpose of this command is to ensure that any messages entered into the chat room outside of the CloudShell GUI are reflected in the Output window in order to keep all permitted users of the sandbox up-to-date. This code is based on the class MucBot in the driver code.
+
+![Chat Room Monitor](https://user-images.githubusercontent.com/18084644/66500258-1e513a80-eab9-11e9-8f94-f42312903ac7.PNG)
+
+### Sending a chat room message from CloudShell
+Sending a message to the sandbox users is simple. Click on the "Chat Room Service" service and click on the command "Send Chat Room Message".
+
+![welcome msg](https://user-images.githubusercontent.com/18084644/66500532-99b2ec00-eab9-11e9-86aa-997bcde12e67.PNG)
+
+![Send Message](https://user-images.githubusercontent.com/18084644/66500765-03cb9100-eaba-11e9-963c-c687d52ea306.PNG)
+
+![Msg in Spark](https://user-images.githubusercontent.com/18084644/66500977-72a8ea00-eaba-11e9-9ba3-96299a62b1e7.PNG)
 
 
-In the other service instance (let us call it "Chat Room Message Monitor", click on the "
+
+
 
 ## Suggested Improvements
 If the sandbox name or any of its permitted users change, these are not automatically updated in the respective OpenFire chat room. An option to auto reflect such changes after a change should be offered perhaps.
