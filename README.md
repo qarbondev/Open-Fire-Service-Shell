@@ -1,7 +1,7 @@
 # OpenFire Server Custom Service Shell
 
 ## Introduction
-This custom service shell provides an integration with the OpenFire RealTime Collaboration (RTC) server whose details can be found @ https://www.igniterealtime.org/projects/openfire/
+This custom service shell provides an integration between CloudShell and the OpenFire RealTime Collaboration (RTC) server whose details can be found @ https://www.igniterealtime.org/projects/openfire/
 
 OpenFire uses the only widely adopted open protocol for instant messaging, XMPP (also called Jabber). At its core is the concept of a conference or chat room. The idea behind this integration is to allow a chat room to be created by this service for each sandbox. Messages can be entered directly into the chat room via a client such as Spark (for example, the Instant Messaging client @ https://www.igniterealtime.org/projects/spark/index.jsp) or via a command from this Shell. 
 
@@ -32,6 +32,8 @@ We suggest you name the instances something like "Chat Room Monitor" and "Chat R
 
 ![Chatroom Blueprint](https://user-images.githubusercontent.com/18084644/66499146-25774900-eab7-11e9-9e42-bf93d9c319b7.PNG)
 
+![Props](https://user-images.githubusercontent.com/18084644/66503499-4e034100-eabf-11e9-8451-cf7e2e7fa97b.PNG)
+
 ### Reserving a blueprint and creating the chat room for the sandbox
 Reserve your blueprint. Once Active, you should create a chatroom for the sandbox using the "Create Sandbox Chat Room" command. Notice in the Spark client and/or the OpenFire Server web GUI, there is now a new Group Chat room. The owner will be set as the admin user defined in the service properties for OpenFire. The members will reflect the permitted users of the sandbox. It is important that all users that need access to this chat room should be made Permitted Users.
 
@@ -42,6 +44,8 @@ Reserve your blueprint. Once Active, you should create a chatroom for the sandbo
 ![Chat Room Create Output](https://user-images.githubusercontent.com/18084644/66499590-04632800-eab8-11e9-9281-dd8e5550b2b7.PNG)
 
 ![ChatRoom in OpenFire](https://user-images.githubusercontent.com/18084644/66499738-4b511d80-eab8-11e9-8e51-0af94f8ba874.PNG)
+
+It is also a good idea to invoke this shell command as part of the automated Setup process.
 
 ### Start monitoring messages in the sandbox
 In the other service instance (let us call it "Chat Room Monitor", click on the "Monitor Chat Room" command. This command will never terminate so simply leave it running. The purpose of this command is to ensure that any messages entered into the chat room outside of the CloudShell GUI are reflected in the Output window in order to keep all permitted users of the sandbox up-to-date. This code is based on the class MucBot in the driver code.
@@ -93,6 +97,19 @@ To display and attach a simple text file of the message history to the sandbox, 
 
 ![Attach1](https://user-images.githubusercontent.com/18084644/66503356-fa90f300-eabe-11e9-8973-f765d12dc18b.PNG)
 
+![Attach2](https://user-images.githubusercontent.com/18084644/66503671-b2be9b80-eabf-11e9-93b7-8e66d484da63.PNG)
+
+![Attach3](https://user-images.githubusercontent.com/18084644/66503675-b4885f00-eabf-11e9-8e31-ba89d7abd426.PNG)
+
+### Deleting the chat room
+
+To complete the cycle, you should delete the sandbox chat room when it is no longer required. Simply click on the command "Delete Sandbox Chat Room".
+
+![Delete0](https://user-images.githubusercontent.com/18084644/66503925-0cbf6100-eac0-11e9-92df-c96cb67e823b.PNG)
+
+![Delete1](https://user-images.githubusercontent.com/18084644/66503928-0e892480-eac0-11e9-8286-7c8de9e301a5.PNG)
+
+It is also a good idea to invoke this shell command as part of the automated Teardown process.
 
 ## Suggested Improvements
 1. If the sandbox name or any of its permitted users change, these are not automatically updated in the respective OpenFire chat room. An option to auto reflect such changes after a change should be offered perhaps.
