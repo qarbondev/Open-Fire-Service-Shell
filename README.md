@@ -5,6 +5,8 @@ This custom service shell provides an integration between CloudShell and the Ope
 
 OpenFire uses the only widely adopted open protocol for instant messaging, XMPP (also called Jabber). At its core is the concept of a conference or chat room. The idea behind this integration is to allow a chat room to be created by this service for each sandbox. Messages can be entered directly into the chat room via a client such as Spark (for example, the Instant Messaging client @ https://www.igniterealtime.org/projects/spark/index.jsp) or via a command from this Shell. 
 
+For details on functions provided by this shell, please see the "Operational Usage" section below.
+
 ## CloudShell and OpenFire Compatibility
 This service shell was developed and tested against CloudShell 9.2 GA. There is no reason why it would not work with 9.3 GA although it would require an update to the requirements.txt file as documented @ https://devguide.quali.com/orchestration/9.3.0/getting-started.html to reflect the use of a later version of the the cloudshell-orch-core package
 
