@@ -65,12 +65,24 @@ Let us imagine that someone finds it more convenient to send a message via a cli
 
 ![Msg Outside CS](https://user-images.githubusercontent.com/18084644/66501326-1c887680-eabb-11e9-9d36-83416d002ecd.PNG)
 
-![Auto Monitor Message](https://user-images.githubusercontent.com/18084644/66501399-40e45300-eabb-11e9-8d3b-f757373e1ce3.PNG)
+![Auto Monitor Message](https://user-images.githubusercontent.com/18084644/66501510-712bf180-eabb-11e9-8752-eced9d5329e2.PNG)
+
+### Broadcast message
+
+OpenFire offers a simple broadcast facility that displays a pop-up window to all users connected via Spark or some other IM client. An example is shown below.
+
+![broadcast1](https://user-images.githubusercontent.com/18084644/66501987-5d34bf80-eabc-11e9-941e-7f4ae46f4747.PNG)
+
+![broadcast1 5](https://user-images.githubusercontent.com/18084644/66502253-ce747280-eabc-11e9-8986-19d1c9a7dd2c.PNG)
+
+![broadcast2](https://user-images.githubusercontent.com/18084644/66502142-9f5e0100-eabc-11e9-89f4-511e04b4da6c.PNG)
 
 ### Listing all chat room messages to-date
 
-
+To get completely up-to-date with all the dialogue that has taken place in the sandbox chat room, simply click on the command "
 
 
 ## Suggested Improvements
-If the sandbox name or any of its permitted users change, these are not automatically updated in the respective OpenFire chat room. An option to auto reflect such changes after a change should be offered perhaps.
+1. If the sandbox name or any of its permitted users change, these are not automatically updated in the respective OpenFire chat room. An option to auto reflect such changes after a change should be offered perhaps.
+
+2. Enhance the broadcast message command to reflect the message in all sandbox output windows so that users do not need to be logged into Spark or any other OpenFire clieht to see the message.
