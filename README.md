@@ -79,10 +79,22 @@ OpenFire offers a simple broadcast facility that displays a pop-up window to all
 
 ### Listing all chat room messages to-date
 
-To get completely up-to-date with all the dialogue that has taken place in the sandbox chat room, simply click on the command "
+To get completely up-to-date with all the dialogue that has taken place in the sandbox chat room, simply click on the command "List Chat Room Message History". 
+
+![ListMessageHistory0](https://user-images.githubusercontent.com/18084644/66503154-94a46b80-eabe-11e9-9879-a5843e362498.PNG)
+
+![ListMessageHistory](https://user-images.githubusercontent.com/18084644/66502807-e7c9ee80-eabd-11e9-8fc6-62515ff3539d.PNG)
+
+### Attach chat room message history
+
+To display and attach a simple text file of the message history to the sandbox, simply click on the command "Attach Chat Room Message History". 
+
+![attach0](https://user-images.githubusercontent.com/18084644/66503340-f1a02180-eabe-11e9-8622-183ddf417379.PNG)
+
+![Attach1](https://user-images.githubusercontent.com/18084644/66503356-fa90f300-eabe-11e9-8973-f765d12dc18b.PNG)
 
 
 ## Suggested Improvements
 1. If the sandbox name or any of its permitted users change, these are not automatically updated in the respective OpenFire chat room. An option to auto reflect such changes after a change should be offered perhaps.
 
-2. Enhance the broadcast message command to reflect the message in all sandbox output windows so that users do not need to be logged into Spark or any other OpenFire clieht to see the message.
+2. Enhance the broadcast message command to reflect the message in all sandbox output windows not just the one the sender sent it from.
