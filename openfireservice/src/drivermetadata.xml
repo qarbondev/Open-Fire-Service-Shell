@@ -1,0 +1,26 @@
+<Driver Description="Describe the purpose of your CloudShell shell" MainClass="driver.OpenfireserviceDriver" Name="OpenfireserviceDriver" Version="1.0.0">
+    <Layout>
+        <Category Name="Chat room commands">
+            <Command Description="Creates a sandbox chat room for users" DisplayName="Create Sandbox Chat Room" Name="create_chatroom" >
+            </Command>
+            <Command Description="List chat room users" DisplayName="Show owners and members" Name="show_chatroom_users" >
+            </Command>
+            <Command Description="Deletes the sandbox chat room created for users" DisplayName="Delete Sandbox Chat Room" Name="delete_chatroom" >
+            </Command>
+            <Command Description="Monitors and displays chat room messages" DisplayName="Monitor Chat Room" Name="monitor_chatroom" >
+            </Command>
+        </Category>
+        <Category Name="Message commands">
+            <Command Description="Sends a message to the sandbox chat room" DisplayName="Send Chat Room Message" Name="send_chatroom_message" >
+            </Command>
+            <Command Description="Users need to be connected" DisplayName="Broadcasts message to all users" Name="broadcast_message" >
+            </Command>
+        </Category>
+        <Category Name="Message History commands">
+            <Command Description="Get chat room message history" DisplayName="List Chat Room Message History" Name="get_chatroom_message_history" >
+            </Command>
+            <Command Description="Attach chat room message history" DisplayName="Attach Chat Room Message History" Name="attach_chatroom_message_history" >
+            </Command>
+        </Category>
+    </Layout>
+</Driver>

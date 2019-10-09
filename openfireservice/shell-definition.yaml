@@ -1,0 +1,62 @@
+tosca_definitions_version: tosca_simple_yaml_1_0
+
+metadata:
+  template_name: Openfireservice
+  template_author: Anonymous
+  template_version: 0.1.0
+  template_icon: shell-icon.png
+
+description: >
+  TOSCA based service shell
+
+imports:
+  - cloudshell_standard: cloudshell_custom_service_standard_1_0_0.yaml
+
+node_types:
+
+  vendor.resource.Openfireservice:
+    derived_from: cloudshell.nodes.CustomService
+    properties:
+      User:
+        description: Openfire User with administrative privileges
+        type: string
+        tags: [user_input]
+        default: admin
+      Password:
+        type: cloudshell.datatypes.Password
+        tags: [user_input]
+      Server:
+        description: Openfire Server IP or hostname
+        type: string
+        tags: [user_input]
+        default: localhost
+      Port:
+        description: Openfire Port for REST API
+        type: string
+        tags: [user_input]
+        default: 9090
+      CloudShell User:
+        description: Openfire User with administrative privileges
+        type: string
+        tags: [user_input]
+        default: admin
+      CloudShell Password:
+        type: cloudshell.datatypes.Password
+        tags: [user_input]
+      CloudShell Server:
+          description: Openfire Server IP or hostname
+          type: string
+          tags: [user_input]
+          default: localhost
+      CloudShell API Port:
+          description: Openfire Port for REST API
+          type: string
+          tags: [user_input]
+          default: 9000
+    artifacts:
+      icon:
+        file: shell-icon.png
+        type: tosca.artifacts.File
+      driver:
+        file: OpenfireserviceDriver.zip
+        type: tosca.artifacts.File
