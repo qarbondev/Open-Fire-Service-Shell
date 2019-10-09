@@ -20,6 +20,7 @@ The following steps should be taken when using this Shell:
 
 4. Log in to the Web GUI for the OpenFire server (for example, http://localhost:9090). Move to the "Server" toolbar and then "Server Settings" under this. You should see "REST API" on the bottom left. Select this and then Enable the plug-in with basic authentication.
 
+![OpenFire Shell Service REST API Enable](https://user-images.githubusercontent.com/18084644/66498860-b0a40f00-eab6-11e9-8676-3f0385ee367f.PNG)
 
 5. Download and install the Spark client from https://www.igniterealtime.org/downloads/index.jsp#openfire. Log in and test the connectivity to the OpenFire server.
 
@@ -33,4 +34,4 @@ Reserve your blueprint. Once Active, you should create a chatroom for the sandbo
 In the other service instance (let us call it "Chat Room Message Monitor", click on the "
 
 ## Suggested Improvements
-If the sandbox name changes or any of its permitted users, the chat room name or its room members respectively are not automatically updated. An option to auto reflect such changes after a change should be offered perhaps.
+If the sandbox name or any of its permitted users change, these are not automatically updated in the respective OpenFire chat room. An option to auto reflect such changes after a change should be offered perhaps.
